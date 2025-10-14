@@ -96,8 +96,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
         vapi.on('error', onError);
         vapi.on('speech-start', onSpeechStart);
         vapi.on('speech-end', onSpeechEnd);
-        vapi.on('call-did-start', onCallDidStart);
-        vapi.on('call-did-end', onCallDidEnd);
+     
 
         return () => {
             // Clean up all event listeners
@@ -107,8 +106,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             vapi.off('error', onError);
             vapi.off('speech-start', onSpeechStart);
             vapi.off('speech-end', onSpeechEnd);
-            vapi.off('call-did-start', onCallDidStart);
-            vapi.off('call-did-end', onCallDidEnd);
+      
         };
     }, []);
 
