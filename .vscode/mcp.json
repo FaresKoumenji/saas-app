@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "Sentry": {
+      "url": "https://mcp.sentry.dev/mcp/esprit-0z/javascript-nextjs",
+      "type": "http"
+    }
+  }
+}
